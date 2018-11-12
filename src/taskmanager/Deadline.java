@@ -5,19 +5,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Deadline extends Todo {
-    //protected String by;
-    protected Date bydate;
 
-    public Deadline(String description, Date mybyDate){
+    private Date dateToCompleteTask;
+
+    //used for creation by user when CLI runs.
+    public Deadline(String description, Date dateToCompleteTask){
         super(description);
-        //by=byDate;
-        bydate=mybyDate;
+        this.dateToCompleteTask=dateToCompleteTask;
     }
 
-
-    public Deadline(String description, Date mybyDate, boolean isDone){
+    //used by the file reader.
+    public Deadline(String description, Date dateToCompleteTask, boolean isDone){
         super(description, isDone);
-        bydate=mybyDate;
+        this.dateToCompleteTask=dateToCompleteTask;
     }
 
     /**
@@ -28,11 +28,8 @@ public class Deadline extends Todo {
 
         //return by;
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-        return df.format(bydate);
+        return df.format(dateToCompleteTask);
     }
-    /*public void setBy(String byDate){
-        by=byDate;
-    }*/
 
     /**
      *
