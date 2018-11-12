@@ -20,7 +20,7 @@ public class Todo extends Task {
     }
     public String asSaveString() {
         int isTaskDone = isDone()? 1 : 0;
-        return "T | " + isTaskDone + " | " + myTaskDescription
+        return "T | " + isTaskDone + " | " + taskDescription
                 + System.lineSeparator();
     }
 

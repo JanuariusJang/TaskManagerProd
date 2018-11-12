@@ -5,16 +5,16 @@ import java.util.List;
 
 public class Storage {
 
-    private String filepath;
+    private String filePath;
 
-    public Storage(String filepath) {
+    public Storage(String filePath) {
 
-        this.filepath=filepath;
+        this.filePath=filePath;
     }
 
     public List<Task> load() throws TaskManagerException{
 
-        return getTasksFromFile.getTasksFromFile(filepath);
+        return getTasksFromFile.getTasksFromFile(filePath);
     }
 
 
