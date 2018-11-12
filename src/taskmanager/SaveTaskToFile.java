@@ -1,6 +1,7 @@
 package taskmanager;
 
 import java.io.File;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.io.FileWriter;
@@ -20,9 +21,13 @@ public class SaveTaskToFile  {
                 currentCount++;
                 s.nextLine();
             }
+            PrintWriter writer = new PrintWriter(myFile);
+            writer.print("");
+            writer.close();
 
-            for (int i = currentCount; i < myTasks.size(); i++) {
-            //for (int i = 0; i < myTasks.size(); i++) {
+
+            //for (int i = currentCount; i < myTasks.size(); i++) {
+            for (int i = 0; i < myTasks.size(); i++) {
                 //System.out.println(myTasks.get(i).asSaveString());
                 writeToFile(myFile, myTasks.get(i).asSaveString());
 
