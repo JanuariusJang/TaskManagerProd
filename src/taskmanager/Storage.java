@@ -10,7 +10,6 @@ public class Storage {
     //private int currentTaskCount=0;
 
     public Storage(String filepath) throws TaskManagerException {
-System.out.println("in storage");
         tasks= getTasksFromFile.getTasksFromFile(filepath);
         //System.out.println("taskmanager.Storage ok");
         //currentTaskCount=tasks.size();
