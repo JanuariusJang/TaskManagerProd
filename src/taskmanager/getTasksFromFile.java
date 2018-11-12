@@ -73,9 +73,7 @@ public class getTasksFromFile {
             boolean done=false;
             if (DoneOrNot=="1")
                 done=true;
-            //System.out.println("deadline added");
             return new Deadline(TaskDescription, mydeadline, done);
-            //return new taskmanager.Todo(TaskDescription, done);
 
         }
         else {
