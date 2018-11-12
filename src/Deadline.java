@@ -2,10 +2,12 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
+
 public class Deadline extends Todo {
-    //protected String by;
+    
     protected Date bydate;
-    //test
+
 
     public Deadline(String description, Date mybyDate){
         super(description);

@@ -1,3 +1,6 @@
 *.class
 *.txt
 *.xml
+out/
+.idea/
+data/
