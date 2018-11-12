@@ -26,3 +26,5 @@ T | 0 | payroad tax
 T | 1 | Change the plants (dying already)
 T | 1 | Change car seat belt
 D | 0 | lose 20 Kgs | 24/12/2018
+T | 0 | plan Italy trip
+D | 0 | finalise Spain trip | 02/01/2019

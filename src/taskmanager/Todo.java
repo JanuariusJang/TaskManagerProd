@@ -28,12 +28,5 @@ public class Todo extends Task {
         super(description,isDone);
         //isDone=false;
     }
-    /*public boolean isDone(){
-        return isDone;
-    }*/
 
-    /*public void setDone(boolean doneOrNot){
-        isDone=doneOrNot;
-    }*/
-    //
 }
