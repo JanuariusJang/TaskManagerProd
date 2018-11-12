@@ -51,9 +51,10 @@ public class getTasksFromFile {
         //System.out.println(TaskType);
         if (TaskType.contains("T")){
             boolean done=false;
-            if (DoneOrNot=="1")
+            if (Integer.parseInt(DoneOrNot)==1)
                 done=true;
-            //System.out.println("taskmanager.Todo added");
+
+           // System.out.println(DoneOrNot);
             return new Todo(TaskDescription, done);
 
         }
