@@ -1,4 +1,7 @@
-import javax.lang.model.type.NullType;
+package taskmanager;
+
+import taskmanager.Deadline;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -7,10 +10,6 @@ import java.util.List;
 import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class getTasksFromFile {
 
@@ -54,7 +53,7 @@ public class getTasksFromFile {
             boolean done=false;
             if (DoneOrNot=="1")
                 done=true;
-            //System.out.println("Todo added");
+            //System.out.println("taskmanager.Todo added");
             return new Todo(TaskDescription, done);
 
         }
@@ -74,7 +73,7 @@ public class getTasksFromFile {
                 done=true;
             //System.out.println("deadline added");
             return new Deadline(TaskDescription, mydeadline, done);
-            //return new Todo(TaskDescription, done);
+            //return new taskmanager.Todo(TaskDescription, done);
 
         }
         else {
