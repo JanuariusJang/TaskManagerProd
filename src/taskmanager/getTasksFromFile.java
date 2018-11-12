@@ -68,6 +68,7 @@ public class getTasksFromFile {
                 throw new TaskManagerException("Date field is wrong");
             }
 
+
             boolean done=false;
             if (DoneOrNot=="1")
                 done=true;

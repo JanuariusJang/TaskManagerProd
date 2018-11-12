@@ -14,11 +14,16 @@ public class Deadline extends Todo {
         bydate=mybyDate;
     }
 
+
     public Deadline(String description, Date mybyDate, boolean isDone){
         super(description, isDone);
         bydate=mybyDate;
     }
 
+    /**
+     *returns the deadline in <b>dd/MM/yyyy</b> format
+     * @return gets the deadline.
+     */
     public String getBy(){
 
         //return by;
@@ -29,9 +34,13 @@ public class Deadline extends Todo {
         by=byDate;
     }*/
 
+    /**
+     *
+     * @return everything about the Task.
+     */
     @Override
     public String asString() {
-        return super.asString() + System.lineSeparator() + "Do by:" + getBy() ;
+        return super.asString() + System.lineSeparator() + "Do by:" + getBy()  ;
     }
 
     public String asSaveString(){
