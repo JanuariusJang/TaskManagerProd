@@ -1,3 +1,9 @@
+package taskmanager;
+
+import taskmanager.Parser;
+import taskmanager.Storage;
+import taskmanager.TaskList;
+
 public class TaskManager {
 
     private Storage storage;
