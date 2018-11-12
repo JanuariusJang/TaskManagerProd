@@ -22,8 +22,9 @@ public class SaveTaskToFile  {
             }
 
             for (int i = currentCount; i < myTasks.size(); i++) {
+            //for (int i = 0; i < myTasks.size(); i++) {
+                //System.out.println(myTasks.get(i).asSaveString());
                 writeToFile(myFile, myTasks.get(i).asSaveString());
-
 
             }
 
@@ -33,7 +34,6 @@ public class SaveTaskToFile  {
     }
     private static void writeToFile(String filePath, String textToAdd) throws IOException {
         FileWriter fw = new FileWriter(filePath, true);
-        //FileWriter fw = new FileWriter(filePath);
         fw.write(textToAdd);
         fw.close();
     }

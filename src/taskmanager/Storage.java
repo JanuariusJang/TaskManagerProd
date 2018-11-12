@@ -23,6 +23,5 @@ public class Storage {
 
     public  Storage (List<Task> mytasks){
         SaveTaskToFile.saveFile(mytasks);
-        //currentTaskCount=0;
     }
 }

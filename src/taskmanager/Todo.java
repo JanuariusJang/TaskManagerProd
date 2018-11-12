@@ -19,7 +19,7 @@ public class Todo extends Task {
         return getDescription() + System.lineSeparator()+ "Is done? "+ yesno;
     }
     public String asSaveString() {
-        int isTaskDone = isDone ? 1 : 0;
+        int isTaskDone = isDone()? 1 : 0;
         return "T | " + isTaskDone + " | " + myTaskDescription
                 + System.lineSeparator();
     }

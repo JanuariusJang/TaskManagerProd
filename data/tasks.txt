@@ -4,7 +4,7 @@ T | 1 | join sports club
 T | 0 | Go Running
 T | 0 | Clear the Trash
 T | 0 | paint the wall
-D | 0 | finish Task Manager Level 5 | 6/1/2018
+D | 0 | finish taskmanager.Task Manager Level 5 | 6/1/2018
 D | 0 | pay ERP fine | 6/1/2018
 D | 0 | one | 6/1/2018
 T | 0 | run marathon
@@ -22,3 +22,4 @@ T | 0 | change car seat
 D | 0 | wash car | 6/1/2018
 T | 0 | buy milk
 T | 0 | buy Newspapers
+T | 0 | payroad tax
