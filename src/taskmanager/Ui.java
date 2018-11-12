@@ -1,3 +1,7 @@
+package taskmanager;
+
+import taskmanager.TaskList;
+
 import java.util.Scanner;
 
 public class Ui {
@@ -12,7 +16,7 @@ public class Ui {
     }
 
     public void printWelcome(){
-        System.out.println("Welcome to Task Manager!");
+        System.out.println("Welcome to taskmanager.Task Manager!");
     }
 
     public void printError(String errorMessage){

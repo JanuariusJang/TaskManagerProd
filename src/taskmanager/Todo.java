@@ -1,3 +1,7 @@
+package taskmanager;
+
+import taskmanager.Task;
+
 public class Todo extends Task {
     //protected boolean isDone;
 
