@@ -17,6 +17,7 @@ public class TaskList {
     public TaskList (List<Task> oldtasks){
         tasks = new ArrayList<>();
         tasks.addAll(oldtasks);
+
     }
 
     public void markAsDone(int line){

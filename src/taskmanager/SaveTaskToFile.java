@@ -1,7 +1,6 @@
 package taskmanager;
 
 import java.io.File;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.io.FileWriter;
@@ -21,15 +20,10 @@ public class SaveTaskToFile  {
                 currentCount++;
                 s.nextLine();
             }
-            PrintWriter writer = new PrintWriter(myFile);
-            writer.print("");
-            writer.close();
 
-
-            //for (int i = currentCount; i < myTasks.size(); i++) {
-            for (int i = 0; i < myTasks.size(); i++) {
-                //System.out.println(myTasks.get(i).asSaveString());
+            for (int i = currentCount; i < myTasks.size(); i++) {
                 writeToFile(myFile, myTasks.get(i).asSaveString());
+
 
             }
 
@@ -39,6 +33,7 @@ public class SaveTaskToFile  {
     }
     private static void writeToFile(String filePath, String textToAdd) throws IOException {
         FileWriter fw = new FileWriter(filePath, true);
+        //FileWriter fw = new FileWriter(filePath);
         fw.write(textToAdd);
         fw.close();
     }
