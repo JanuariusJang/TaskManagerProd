@@ -1,19 +1,19 @@
 package taskmanager;
 
 public abstract class Task {
-    protected String myTaskDescription;
+    protected String taskDescription;
     protected boolean isDone;
 
     public Task (){
     }
 
     public Task (String mytask) {
-        myTaskDescription=mytask;
+        taskDescription=mytask;
         isDone=false;
     }
 
     public Task (String mytask, Boolean isDoneOrNot) {
-        myTaskDescription=mytask;
+        taskDescription=mytask;
         isDone=isDoneOrNot;
     }
 
@@ -30,7 +30,7 @@ public abstract class Task {
     }*/
 
     public String getDescription() {
-        return myTaskDescription;
+        return taskDescription;
     }
 
     public abstract String asString();

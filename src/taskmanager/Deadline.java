@@ -4,46 +4,45 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
-
 public class Deadline extends Todo {
-    
-    protected Date bydate;
 
+    private Date dateToCompleteTask;
 
-    public Deadline(String description, Date mybyDate){
+    //used for creation by user when CLI runs.
+    public Deadline(String description, Date dateToCompleteTask){
         super(description);
-        //by=byDate;
-        bydate=mybyDate;
+        this.dateToCompleteTask=dateToCompleteTask;
     }
 
-    public Deadline(String description, Date mybyDate, boolean isDone){
+    //used by the file reader.
+    public Deadline(String description, Date dateToCompleteTask, boolean isDone){
         super(description, isDone);
-        bydate=mybyDate;
+        this.dateToCompleteTask=dateToCompleteTask;
     }
 
+    /**
+     *returns the deadline in <b>dd/MM/yyyy</b> format
+     * @return gets the deadline.
+     */
     public String getBy(){
 
         //return by;
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-        return df.format(bydate);
+        return df.format(dateToCompleteTask);
     }
-    /*public void setBy(String byDate){
-        by=byDate;
-    }*/
 
+    /**
+     *
+     * @return everything about the Task.
+     */
     @Override
     public String asString() {
-        return super.asString() + System.lineSeparator() + "Do by:" + getBy() ;
+        return super.asString() + System.lineSeparator() + "Do by:" + getBy()  ;
     }
 
     public String asSaveString(){
-<<<<<<< HEAD
-        int isTaskDone = isDone? 1: 0;
-=======
         int isTaskDone = isDone()? 1: 0;
->>>>>>> parent of 7901c9e... clean up code
-        return "D | " + isTaskDone + " | " + myTaskDescription +" | "
+        return "D | " + isTaskDone + " | " + taskDescription +" | "
                 + getBy() + System.lineSeparator();
 
     }

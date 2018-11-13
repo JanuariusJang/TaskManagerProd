@@ -15,16 +15,12 @@ public class Todo extends Task {
 
     @Override
     public String asString() {
-        String yesno = isDone()? "yes": "no";
+        String yesno = isDone()? "Yes" : "No";
         return getDescription() + System.lineSeparator()+ "Is done? "+ yesno;
     }
     public String asSaveString() {
-<<<<<<< HEAD
-        int isTaskDone = isDone ? 1 : 0;
-=======
         int isTaskDone = isDone()? 1 : 0;
->>>>>>> parent of 7901c9e... clean up code
-        return "T | " + isTaskDone + " | " + myTaskDescription
+        return "T | " + isTaskDone + " | " + taskDescription
                 + System.lineSeparator();
     }
 
@@ -32,12 +28,5 @@ public class Todo extends Task {
         super(description,isDone);
         //isDone=false;
     }
-    /*public boolean isDone(){
-        return isDone;
-    }*/
 
-    /*public void setDone(boolean doneOrNot){
-        isDone=doneOrNot;
-    }*/
-    //
 }
