@@ -38,7 +38,11 @@ public class Deadline extends Todo {
     }
 
     public String asSaveString(){
+<<<<<<< HEAD
         int isTaskDone = isDone? 1: 0;
+=======
+        int isTaskDone = isDone()? 1: 0;
+>>>>>>> parent of 7901c9e... clean up code
         return "D | " + isTaskDone + " | " + myTaskDescription +" | "
                 + getBy() + System.lineSeparator();
 
