@@ -16,7 +16,7 @@ public class Ui {
     }
 
     public void printWelcome(){
-        System.out.println("Welcome to taskmanager.Task Manager!");
+        System.out.println("Welcome to taskmanager. Pls enter your command!");
     }
 
     public void printError(String errorMessage){
