@@ -25,3 +25,4 @@ T | 1 | buy Newspapers
 T | 1 | Make Sequence diagram for Week 13 demo
 T | 0 | paint room yellow
 D | 0 | lose 25 kgs by chrismas | 24/12/2018
+D | 0 | revise Software Engineering textbook | 21/12/2018
